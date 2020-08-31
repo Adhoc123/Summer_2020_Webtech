@@ -1,0 +1,1 @@
+This is your mail address : <?php echo $_POST["email"]?>
