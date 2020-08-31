@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="gvalid.js"></script>
+</head>
+<body>
+	<form name="myform" action="show.php" onsubmit ="return validation()" method="post">
+	    <fieldset style="width:230px">
+	    	<legend>Gender</legend>
+	    	<table>
+		    	<tr>
+			    	<td><input type="radio" name="gender" id="male">Male</td>
+			    	<td><input type="radio" name="gender" id="female">Female</td>
+			    	<td><input type="radio" name="gender" id="other">Other</td>
+		        </tr>
+	        </table>
+	    </fieldset>
+	    <table> 
+        <tr>
+        	<td><input type="submit" name="submit" value="Submit"></td>
+        	<td id = "demo"></td>
+        </tr>
+        </table>
+    </form>
+
+
+</body>
+</html>
