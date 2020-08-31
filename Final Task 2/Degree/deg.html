@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="check.js"></script>
+    <title></title>
+</head>
+<body>
+    <form action="show.php" onsubmit="return validate()" method="POST">
+        <fieldset style="width: 200px;">
+            <legend>Degree</legend>
+             <input type="checkbox" id="SSC" name="degree" onclick="deletes()" onmouseover="deletes()" onmouseout="free()" >SSC
+             <input type="checkbox" id="HSC" name="degree" onclick="deletes()" onmouseover="deletes()" onmouseout="free()" >HSC
+             <input type="checkbox" id="BSc" name="degree" onclick="deletes()" onmouseover="deletes()" onmouseout="free()">BSc
+             
+        </fieldset>
+        <b id="msg"></b><br>
+        <input type="submit" name="submit" value="Submit">
+
+    </form>
+    
+    
+</body>
+</html>
