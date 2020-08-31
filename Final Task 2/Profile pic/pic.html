@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="check.js"></script>
+    <title></title>
+</head>
+<body>
+    <form action="show.php" onsubmit="return validate()" method="POST">
+       
+        <fieldset style="width: 500px;">
+         <legend>Profile Picture</legend>
+        User Id <input type="number" id="uid" name="uid" style="margin-bottom: 10px;" onkeyup="deletes()" onblur="clearuser()" onclick="deletes()"> <i id="umsg"></i> <br>
+        Picture<input type="file"  id="fname" name ="fname" style="margin-left:8px; position: absolute;" onmouseout="clearpic()" onmouseover="deletes()" onclick="deletes()" >
+        <br><br>
+        <i id="pmsg"></i>
+        <hr>
+    </fieldset>
+    <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+    
+    
+</body>
+</html>
