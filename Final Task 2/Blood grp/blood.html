@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="check.js"></script>
+    <title></title>
+</head>
+<body>
+    <form action="show.php" onsubmit="return validate()" method="POST">
+        Blood Group <select name="blood" id="bgrp" size="1px" onmouseout="free()" onclick="deletes()" onmouseover="deletes()">
+            <option value=""></option>
+            <option value="A+">A+</option>
+            <option value="B+">B+</option>
+            <option value="O+">O+</option>
+            <option value="AB+">AB+</option>
+            <option value="A-">A-</option>
+            <option value="B-">B-</option>
+            <option value="O-">O-</option>
+            <option value="AB-">AB-</option>
+        </select>   <b id="bmsg"></b>
+        <hr width="15%" style="margin-left: 1px">
+        <input type="submit" name="submit" value="Submit">
+
+    </form>
+    
+    
+</body>
+</html>
