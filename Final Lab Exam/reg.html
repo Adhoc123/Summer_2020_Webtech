@@ -2,27 +2,31 @@
 <html>
 <head>
 	<title>Registration</title>
+	<script type="text/javascript" src="regvalidation.js"></script>
 </head>
 <body>
-<form action="regcheck.php" method="post">
+<form action="regcheck.php" method="post" onsubmit="validate()" onkeyup="validate()">
 	<fieldset style="width: 300px">
 		<legend>Sign Up</legend>
 		<table>
 			<tr>
 				<td>Username :</td>
-				<td><input type="text" name="name"></td>
+				<td><input type="text" name="name" id="name"></td>
+				<td id="nmsg"></td>
 			</tr>
 			<tr>
 				<td>Contact Number :</td>
-				<td><input type="number" name="number"></td>
+				<td><input type="number" name="number" id="number"></td>
+				<td id="cmsg"></td>
 			</tr>
 			<tr>
 			    <td>Password :</td>
-			    <td><input type="text" name="password"></td>
+			    <td><input type="text" name="password" id="password"></td>
+			    <td id="pmsg"></td>
 		    </tr>
 		    <tr>
 		    	<td></td>
-		    	<td><input type="submit" name="submit" value="Submit"> <a href="login.html">Back</td>
+		    	<td><input type="submit" name="submit" value="Submit" onclick="validate()"> <a href="login.html">Back</td>
 		    </tr>
 		</table>
 	</fieldset>

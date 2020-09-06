@@ -6,5 +6,6 @@
 			echo "Try again";
 		}
 	}
+	if(isset($_POST['name'])&&isset($_POST['number'])&&isset($_POST['password']))header('logcheck.php');
 
 ?>
